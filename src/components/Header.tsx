@@ -1,9 +1,13 @@
-export default function Header() {
+interface HeaderProps {
+  title: string;
+}
+
+export default function Header(props: HeaderProps) {
   return (
     <header className="flex justify-between items-center py-4 p-24 shadow">
       <img src="logo1.png" alt="logo" className="h-24 aspect-square" />
 
-      <span>Clube do Livro</span>
+      <span>{props.title}</span>
 
       <nav>
         <ul className="flex gap-4">
