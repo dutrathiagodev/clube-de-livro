@@ -2,7 +2,7 @@ interface HeaderProps {
   title: string;
 }
 
-export default function Header(props: HeaderProps) {
+export function Header(props: HeaderProps) {
   return (
     <header className="flex justify-between items-center py-4 p-24 shadow">
       <img src="logo1.png" alt="logo" className="h-24 aspect-square" />

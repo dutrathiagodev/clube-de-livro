@@ -1,5 +1,5 @@
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="flex flex-col items-center justify-center w-full min-h-screen bg-[#0375E6]"></main>
+    <main className="flex flex-col items-center justify-center w-full min-h-screen"></main>
   );
 }

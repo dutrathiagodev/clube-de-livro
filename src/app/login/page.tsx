@@ -1,7 +1,9 @@
+"use client";
+
 import { Button } from "@/src/components";
 
 export default function LoginPage() {
-  function handleSubmit(event) {
+  function handleLogin(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     // console.log(event);
@@ -13,17 +15,18 @@ export default function LoginPage() {
     // console.log(event.target.email.value);
     // console.log(event.target.password.value);
 
-    const { email, password } = event.target;
+    const email = event.currentTarget.email.value;
+    const password = event.currentTarget.password.value;
 
-    console.log(email.value);
-    console.log(password.value);
+    console.log(email);
+    console.log(password);
   }
 
   return (
     <main className="flex flex-col items-center justify-center w-full min-h-screen bg-[#0375E6]">
       <form
         action=""
-        onSubmit={handleSubmit}
+        onSubmit={handleLogin}
         className="flex flex-col justify-center items-start p-6 gap-4 shadow-[0_0_4px_1px_rgba(0,0,0,0.2)] rounded-xl bg-white"
       >
         <h1 className="font-bold text-[#333] text-xl">Olá!</h1>
