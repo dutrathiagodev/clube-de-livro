@@ -1,27 +1,29 @@
+import Link from 'next/link';
+
 interface HeaderProps {
   title: string;
 }
 
 export function Header(props: HeaderProps) {
   return (
-    <header className="flex justify-between items-center py-4 p-24 shadow">
-      <img src="logo1.png" alt="logo" className="h-24 aspect-square" />
+    <header className='flex justify-between items-center py-4 p-24 shadow'>
+      <img src='logo1.png' alt='logo' className='h-24 aspect-square' />
 
       <span>{props.title}</span>
 
       <nav>
-        <ul className="flex gap-4">
+        <ul className='flex gap-4'>
           <li>
-            <a href="#">Home</a>
+            <Link href=''>Home</Link>
           </li>
           <li>
-            <a href="#produtos">Produtos</a>
+            <Link href='/produtos'>Produtos</Link>
           </li>
           <li>
-            <a href="#contatos">Contatos</a>
+            <Link href='/contatos'>Contatos</Link>
           </li>
           <li>
-            <a href="#sobre">Sobre</a>
+            <Link href='/sobre'>Sobre</Link>
           </li>
         </ul>
       </nav>

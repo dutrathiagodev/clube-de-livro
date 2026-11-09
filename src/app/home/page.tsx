@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { useState } from "react";
+import { useState } from 'react';
 
-import { Card, Header, Footer } from "@/src/components";
+import { Card, Header, Footer } from '@/src/components';
 
 export default function HomePage() {
   const [counter, setCounter] = useState(-1);
@@ -56,9 +56,9 @@ export default function HomePage() {
 
   return (
     <div>
-      <Header title="Clube do livro" />
+      <Header title='Clube do livro' />
 
-      <main className="bg-[#032958] p-8 h-96 text-black">
+      <main className='bg-[#032958] p-8 h-96 text-black'>
         {/* <section className='flex justify-center items-center gap-8 h-full'>
           <Card title='Artigo 1' description='artigo 1' />
           <Card title='Artigo 2' description='artigo 2' />
@@ -90,20 +90,20 @@ export default function HomePage() {
           </div>
         </section> */}
 
-        <section className="flex justify-center items-center gap-8 h-full">
-          <div className="flex flex-col items-center gap-6 text-whtie">
-            <p className="text-white font-bold text-2xl">Tempo: {seconds}s</p>
+        <section className='flex justify-center items-center gap-8 h-full'>
+          <div className='flex flex-col items-center gap-6 text-whtie'>
+            <p className='text-white font-bold text-2xl'>Tempo: {seconds}s</p>
 
-            <p className="text-white font-bold text-2xl">
-              Contador: {counter == -1 ? "0" : counter}
+            <p className='text-white font-bold text-2xl'>
+              Contador: {counter == -1 ? '0' : counter}
             </p>
 
-            <div className="flex gap-1">
+            <div className='flex gap-1'>
               <button
                 disabled={isButtonDisabled}
                 onClick={handleClick}
-                type="button"
-                className="bg-black text-white font-bold text-lg rounded-md p-2 w-28 shadow cursor-pointer disabled:cursor-not-allowed disabled:scale-100 transition-colors active:bg-white active:text-black active:scale-105"
+                type='button'
+                className='bg-black text-white font-bold text-lg rounded-md p-2 w-28 shadow cursor-pointer disabled:cursor-not-allowed disabled:scale-100 transition-colors active:bg-white active:text-black active:scale-105'
               >
                 Click
               </button>
